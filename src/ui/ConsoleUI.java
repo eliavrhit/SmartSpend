@@ -1,7 +1,6 @@
 package ui;
 
 import model.Category;
-import model.Transaction;
 import model.TransactionType;
 import service.BudgetManager;
 import strategy.CategorySummaryStrategy;
@@ -83,7 +82,7 @@ public class ConsoleUI {
             scanner.next();
         }
         int val = scanner.nextInt();
-        scanner.nextLine(); // ניקוי ה-Buffer
+        scanner.nextLine();
         return val;
     }
 
@@ -94,7 +93,7 @@ public class ConsoleUI {
             scanner.next();
         }
         double val = scanner.nextDouble();
-        scanner.nextLine(); // ניקוי ה-Buffer
+        scanner.nextLine();
         return val;
     }
 }
